@@ -30,19 +30,3 @@ exports.handleRegister = async (req, res) => {
   await user.save();
   res.json({ data: user.toJSON(), message: "User registered successfully!" });
 };
-
-exports.handleLogin = async (req, res) => {
-  const { password, email } = req.body;
-
-  const user = await User.findOne({ email });
-  if (!user || !(await user.comparePassword(password))) {
-    return res.status(401).json({ error: "Invalid email or password" });
-  }
-
-  const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
-    expiresIn: "30d",
-  });
-  res.json({ user: user.toJSON(), token });
-};
-
-exports.handleLogout = async (req, res) => {};
