@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const seedSuperAdmin = require("./seeders/admin");
@@ -38,6 +39,9 @@ const router = express.Router();
 dotenv.config();
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, "..", "public")));
+
 app.use(express.json());
 
 const extractSession = (req, res, next) => {
