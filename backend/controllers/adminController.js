@@ -1,6 +1,6 @@
 const Answer = require("../models/Answer");
-const Question = require("../models/Question");
-const User = require("../models/User"); // Adjust the path as necessary
+const Question = require("../models/question");
+const User = require("../models/user"); // Adjust the path as necessary
 
 exports.admins = function (req, res) {
   User.find({ role: "admin" })

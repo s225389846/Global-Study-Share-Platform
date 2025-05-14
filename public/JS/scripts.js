@@ -7,7 +7,7 @@ async function loadHTML(id, file) {
 loadHTML("header", "../templates/header.html");
 loadHTML("footer", "../templates/footer.html");
 
-//User Registration Integration 
+//User Registration Integration
 document
   .getElementById("registerForm")
   .addEventListener("submit", async function (e) {
@@ -44,8 +44,8 @@ document
       }
 
       alert("Registration successful!");
-  
-      window.location.href = "/"; 
+
+      window.location.href = "/";
     } catch (err) {
       console.error("Error:", err);
       alert("Something went wrong. Please try again.");
