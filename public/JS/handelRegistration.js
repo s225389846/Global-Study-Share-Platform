@@ -1,12 +1,3 @@
-async function loadHTML(id, file) {
-  const res = await fetch(file);
-  const html = await res.text();
-  document.getElementById(id).innerHTML = html;
-}
-
-loadHTML("header", "../templates/header.html");
-loadHTML("footer", "../templates/footer.html");
-
 //User Registration Integration
 document
   .getElementById("registerForm")
@@ -49,39 +40,5 @@ document
     } catch (err) {
       console.error("Error:", err);
       alert("Something went wrong. Please try again.");
-    }
-  });
-
-// Login Integration from backend
-
-document
-  .getElementById("login-form")
-  .addEventListener("submit", async function (event) {
-    event.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    try {
-      const response = await fetch("/api/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        localStorage.setItem("token", data.token);
-        window.location.href = "/templates/user/user-reistration.html";
-      } else {
-        // Handle login error
-        alert(data.message || "Login failed");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred. Please try again.");
     }
   });

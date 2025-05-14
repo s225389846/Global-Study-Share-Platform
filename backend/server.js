@@ -35,10 +35,13 @@ const {
   getProfile,
   updateProfile,
 } = require("./controllers/profileController");
+
+const cors = require("cors");
 const router = express.Router();
 dotenv.config();
 
 const app = express();
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, "..", "public")));
 
