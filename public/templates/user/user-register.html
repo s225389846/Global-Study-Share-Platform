@@ -25,10 +25,11 @@
           <div class="login-logo">
             <img src="../../images/logo.png" alt="" />
           </div>
-          <form action="">
+          <form id="registerForm">
             <div class="login-input mb-1">
-              <label for="email">Full Name</label>
+              <label for="name">Full Name</label>
               <input
+                id="name"
                 class="form-control"
                 type="text"
                 placeholder="Enter full name"
@@ -38,6 +39,7 @@
             <div class="login-input mb-1">
               <label for="email">Email</label>
               <input
+                id="email"
                 class="form-control"
                 type="email"
                 placeholder="Enter the email address"
@@ -45,8 +47,9 @@
               />
             </div>
             <div class="login-input mb-1">
-              <label for="email">New Password</label>
+              <label for="password">New Password</label>
               <input
+                id="password"
                 class="form-control"
                 type="password"
                 placeholder="Enter the password"
@@ -54,21 +57,24 @@
               />
             </div>
             <div class="login-input mb-1">
-              <label for="email">Confirm Password</label>
+              <label for="confirmPassword">Confirm Password</label>
               <input
+                id="confirmPassword"
                 class="form-control"
                 type="password"
                 placeholder="Re-enter the password"
                 required
               />
             </div>
-            <button class="submit-btn">Register</button>
+            <button class="submit-btn" type="submit">Register</button>
           </form>
+
           <div class="below-login">
-            <h2>Have an account? <a href="">Sign In</a></h2>
+            <h2>Have an account? <a href="/">Sign In</a></h2>
           </div>
         </div>
       </div>
     </section>
+    <script src="../../JS/scripts.js"></script>
   </body>
 </html>
