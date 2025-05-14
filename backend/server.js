@@ -67,9 +67,8 @@ const extractSession = (req, res, next) => {
 app.use(extractSession);
 app.use("/api", router);
 
-// *****************************************
 // ************** Auth Routes **************
-// *****************************************
+
 router.post("/auth/logout", handleLogout);
 router.post("/auth/register", handleRegister);
 router.post("/auth/login", handleLogin);
