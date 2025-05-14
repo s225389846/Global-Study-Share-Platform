@@ -1,5 +1,5 @@
 const Answer = require("../models/Answer");
-const Question = require("../models/Question");
+const Question = require("../models/question");
 const { slugify } = require("../utils/slug");
 
 async function getQuestions(req, res) {

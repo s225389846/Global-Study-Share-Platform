@@ -1,6 +1,6 @@
 const Answer = require("../models/Answer");
-const Question = require("../models/Question");
-const User = require("../models/User");
+const Question = require("../models/question");
+const User = require("../models/user");
 
 async function createUser(req, res) {
   try {
