@@ -1,0 +1,29 @@
+d8f572b - Trilochan Adhikari - 2025-05-15 - User Dashboard Managed
+51bc472 - Trilochan Adhikari - 2025-05-15 - Admin and User Login
+0d49153 - Trilochan Adhikari - 2025-05-14 - Merge branch 'login-inter'
+e097cb6 - Trilochan Adhikari - 2025-05-14 - Login Integration
+495c973 - Trilochan Adhikari - 2025-05-14 - Merge branch 'uttam-controllers'
+4f82e65 - Trilochan Adhikari - 2025-05-14 - Login integration
+edccc45 - uttamnepal765@gmail.com - 2025-05-14 - readme file update
+4bd783b - Trilochan Adhikari - 2025-05-14 - updated
+8036191 - S224877838 - 2025-05-14 - reg auth
+94c91ce - S224877838 - 2025-05-14 - Registration Integration
+d2726d8 - Trilochan Adhikari - 2025-05-14 - user-registration front-end managed
+4e3a6a8 - Trilochan Adhikari - 2025-05-13 - updated
+8db7f59 - Trilochan Adhikari - 2025-05-12 - Front-end format corrected
+2f5de8b - uttamnepal765@gmail.com - 2025-05-12 - controllers and seeder updated
+bd33484 - uttamnepal765@gmail.com - 2025-05-12 - admin controller
+07cd08c - Trilochan Adhikari - 2025-05-12 - Added Login Auth Controller
+dc2141c - Trilochan Adhikari - 2025-05-12 - Merge branch 'uttam-register'
+e6746d4 - Trilochan Adhikari - 2025-05-12 - Added Login Auth Controller
+2b0d42c - uttamnepal765@gmail.com - 2025-05-12 - register controller
+e7a8d49 - S224877838 - 2025-05-12 - Database schema design and user profile auhentication
+a9302c2 - Trilochan Adhikari - 2025-05-12 - Merge branch 'uttam-models'
+ed866ee - Trilochan Adhikari - 2025-05-12 - Merge branch 'uttam-backend'
+288dd52 - uttamnepal765@gmail.com - 2025-05-12 - models created
+97cfd79 - s225128682 - 2025-05-11 - user login and registeration design
+7be6018 - uttamnepal765@gmail.com - 2025-05-08 - minor changes
+3adf1f1 - uttamnepal765@gmail.com - 2025-05-08 - for changes
+8004fa3 - uttamnepal765@gmail.com - 2025-05-07 - structure updated
+ef6f078 - uttamnepal765@gmail.com - 2025-05-07 - structure for fronend and backend and dependencies installed
+c146032 - Trilochan Adhikari - 2025-05-07 - Create README.md
