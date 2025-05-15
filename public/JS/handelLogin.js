@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("login-form");
 
   if (!loginForm) {
-    console.warn("❌ login-form not found on this page.");
+    console.warn("login-form not found on this page.");
     return;
   }
 
@@ -23,10 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = await response.json();
 
       if (response.ok && data.token) {
+        const role = (data.user?.role || "").toLowerCase().trim();
         localStorage.setItem("token", data.token);
-        window.location.href = "/templates/user/user-register.html";
+        localStorage.setItem("role", role);
+
+        if (role === "super-admin") {
+          window.location.href = "/templates/cms/admin-panel.html";
+        } else {
+          window.location.href = "/templates/user/user-dashboard.html";
+        }
       } else {
-        alert(data.message || "Login failed");
+        alert(data.message || "Invalid Credentials");
       }
     } catch (error) {
       console.error("Error:", error);

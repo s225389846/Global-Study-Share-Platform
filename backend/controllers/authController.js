@@ -42,7 +42,11 @@ exports.handleLogin = async (req, res) => {
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
     expiresIn: "30d",
   });
-  res.json({ user: user.toJSON(), token });
+  res.json({
+    token,
+    role: user.role,
+    user: user.toJSON(),
+  });
 };
 
 exports.handleLogout = async (req, res) => {};
