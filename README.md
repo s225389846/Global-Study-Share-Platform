@@ -46,3 +46,6 @@ Users
 Questions
 Answers
 Ensure that you have the correct MongoDB Atlas access credentials to interact with the database, that has been shared with you.
+
+The user management handles profile creation, updation, retrieval and deletion. We used password hashing in user registraion for security. Admins can create and view the users. Users can update or see their details. Only super admins can delete admins but user role can updae only their details. 
+The routes are in server.js, the schema design in user.js, and userController.js has frontend integration and other features. The name, email and password are mandatory then passwords use bycript for hashing and API has proper error handling codes included in them. 
