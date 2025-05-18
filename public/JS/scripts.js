@@ -6,3 +6,5 @@ async function loadHTML(id, file) {
 
 loadHTML("user-nav", "user-nav.html");
 loadHTML("user-icon", "user-icon.html");
+loadHTML("admin-nav", "admin-nav.html");
+loadHTML("admin-icon", "admin-icon.html");
