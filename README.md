@@ -1,5 +1,23 @@
 # Global-Study-Share-Platform
 
+- Project Name: Global Studey Share Platform
+
+- Team Members and Roles:
+Prajina Acharya: Front-End Developer
+Trilochan Adhikari: Core Developer & Scrum Master Sprint 1
+Uttam Nepal: Backend Dveloper & Scrum Master Sprint 2
+Levin Joseph Poovakulath: CRUD Developer 
+Sonakshi: Front-End Developer
+
+- Basis Setup Instruction:
+1. Clone the GIT Repository
+2. In the terminal write: npm install
+3. After NPM is installed, write npm install node
+4. After node is installed, write cd backend
+5. The app is ready to run, write node server.js 
+6. After it runs the server, in browser type: http://localhost:3000/
+
+
 API Integration Guide
 
 - Prerequisites
