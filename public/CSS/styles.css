@@ -125,6 +125,13 @@ body {
   padding: 20px 0;
 }
 
+.sidebar img {
+  width: 35%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 .sidebar a {
   display: block;
   color: white;
