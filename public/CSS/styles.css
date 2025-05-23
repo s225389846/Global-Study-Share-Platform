@@ -205,3 +205,43 @@ body {
   border-color: var(--primary-color);
   color: var(--primary-color);
 }
+
+.feed-box {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.feed-top {
+  font-size: 14px;
+}
+
+.feed-mid {
+  padding: 10px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.094);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.094);
+}
+
+.feed-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cmt {
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  font-size: 12px;
+}
+
+.cmt:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #000;
+}
