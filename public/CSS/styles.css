@@ -226,6 +226,12 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.094);
 }
 
+.feed-report {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.094);
+}
+
+
 .feed-bottom {
   display: flex;
   flex-direction: row;
@@ -244,4 +250,32 @@ body {
   background: var(--secondary-color);
   border-color: var(--secondary-color);
   color: #000;
+}
+
+.restore {
+  border: 1px solid green;
+  background: green;
+  color: white;
+  font-size: 12px;
+}
+
+.delete {
+  border: 1px solid red;
+  background: red;
+  color: white;
+  font-size: 12px;
+}
+
+.restore:hover {
+  border: 1px solid rgb(3, 201, 3);
+  background: rgb(3, 201, 3);
+  color: white;
+  font-size: 12px;
+}
+
+.delete:hover {
+  border: 1px solid rgb(200, 1, 1);
+  background: rgb(200, 1, 1);
+  color: white;
+  font-size: 12px;
 }
