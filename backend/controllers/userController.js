@@ -133,11 +133,9 @@ async function deleteUser(req, res) {
         return res.status(404).json({ message: "User not found" });
       }
       if (userToDelete.role !== "user") {
-        return res
-          .status(403)
-          .json({
-            message: 'Admins can only delete users with the role "user"',
-          });
+        return res.status(403).json({
+          message: 'Admins can only delete users with the role "user"',
+        });
       }
     } else if (req.user.role !== "super-admin") {
       return res.status(403).json({ message: "Access denied" });
