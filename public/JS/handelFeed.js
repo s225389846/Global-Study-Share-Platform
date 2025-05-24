@@ -46,6 +46,9 @@ document.addEventListener("DOMContentLoaded", async () => {
               ).toLocaleDateString()}</div>
 
             </div>
+            <div class="feed-title">
+              Title: ${question.title}
+            </div>
             <div class="feed-mid">
               ${question.body}
             </div>
