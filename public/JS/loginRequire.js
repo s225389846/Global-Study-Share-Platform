@@ -3,6 +3,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (!token) {
     alert("Session expired. Please log in again.");
-    window.location.href = "/index.html";
+    window.location.href = "/";
   }
 });

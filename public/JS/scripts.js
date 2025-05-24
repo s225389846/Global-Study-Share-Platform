@@ -26,7 +26,7 @@ function attachLogout() {
     logoutBtn.addEventListener("click", (e) => {
       e.preventDefault();
       localStorage.clear();
-      window.location.href = "/index.html";
+      window.location.href = "/";
     });
   } else {
     console.warn("Logout button not found!");

@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   if (!token || (role !== "super-admin" && role !== "admin")) {
     alert("Page Restricted");
-    window.location.href = document.referrer || "/index.html";
+    window.location.href = document.referrer || "/";
     return;
   }
 
