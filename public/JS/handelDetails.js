@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
       const response = await fetch(`/api/users/${userId}`, {
-        method: "PUT", // Change to PATCH if required by your API
+        method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",

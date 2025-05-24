@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   if (!token || role !== "super-admin") {
     alert("You must be logged in as a super admin to access this page.");
-    window.location.href = "/index.html";
+    window.location.href = document.referrer || "/index.html";
     return;
   }
 

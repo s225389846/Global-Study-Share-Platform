@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (role === "super-admin") {
           window.location.href = "/templates/cms/admin-panel.html";
+        } else if (role === "admin") {
+          window.location.href = "/templates/cms/admin-panel.html";
         } else {
           window.location.href = "/templates/user/user-dashboard.html";
         }

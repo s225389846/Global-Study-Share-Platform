@@ -1,12 +1,10 @@
-// handelUserlist.js
-
 window.addEventListener("DOMContentLoaded", async () => {
   const token = localStorage.getItem("token");
   const role = localStorage.getItem("role");
 
   if (!token || role !== "super-admin") {
     alert("You must be logged in as a super admin to access this page.");
-    window.location.href = "/index.html";
+    window.location.href = document.referrer || "/index.html";
     return;
   }
 
