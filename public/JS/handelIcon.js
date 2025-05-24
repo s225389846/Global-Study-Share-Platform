@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (response.ok) {
       const data = await response.json();
-      console.log("Fetched user data:", data);
       const userName = data.user?.name || "User";
 
       const userNameSpan = document.querySelector("#user-name");

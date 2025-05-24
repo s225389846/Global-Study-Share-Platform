@@ -207,17 +207,26 @@ body {
 }
 
 .feed-box {
-  padding: 10px;
-  border: 1px solid black;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .feed-top {
   font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed-top i {
+  margin-right: 4px;
 }
 
 .feed-mid {
@@ -230,7 +239,6 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.094);
 }
-
 
 .feed-bottom {
   display: flex;
