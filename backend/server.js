@@ -16,6 +16,7 @@ const {
   updateQuestion,
   deleteQuestion,
   getQuestionDetails,
+  addQuestionReport,
 } = require("./controllers/questionController");
 const isAuthenticated = require("./middlewares/isAuthenticated");
 const {
@@ -80,34 +81,31 @@ router.post("/auth/logout", handleLogout);
 router.post("/auth/register", handleRegister);
 router.post("/auth/login", handleLogin);
 
-// *****************************************
 // ************** Question Routes **************
-// *****************************************
+
 router.get("/questions", getQuestions);
 router.get("/questions/:id", getQuestionDetails);
 router.post("/questions", isAuthenticated, createQuestion);
 router.put("/questions/:id", isAuthenticated, updateQuestion);
 router.delete("/questions/:id", isAuthenticated, deleteQuestion);
+router.post("/questions/:id/report", isAuthenticated, addQuestionReport);
 
-// *****************************************
 // ************** Answer Routes **************
-// *****************************************
+
 router.post("/answers", isAuthenticated, createAnswer);
 router.put("/answers/:id", isAuthenticated, updateAnswer);
 router.delete("/answers/:id", isAuthenticated, deleteAnswer);
 
-// *****************************************
 // ************** User Routes **************
-// *****************************************
+
 router.get("/users", isAuthenticated, getUsers);
 router.get("/users/:id", isAuthenticated, getUserDetails);
 router.post("/users", isAuthenticated, isSuperAdmin, createUser);
 router.put("/users/:id", isAuthenticated, updateUser);
 router.delete("/users/:id", isAuthenticated, deleteUser);
 
-// *****************************************
 // ************** Profile Routes **************
-// *****************************************
+
 router.get("/profile", isAuthenticated, getProfile);
 router.post("/profile", isAuthenticated, updateProfile);
 mongoose.connect(process.env.MONGODB_URI).then(() => {

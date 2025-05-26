@@ -1,5 +1,6 @@
 const Answer = require("../models/Answer");
 const Question = require("../models/question");
+const Report = require("../models/Report");
 const { slugify } = require("../utils/slug");
 
 async function getQuestions(req, res) {
@@ -149,6 +150,29 @@ async function getQuestionDetails(req, res) {
     res.status(500).json({ error: "Failed to fetch question details" });
   }
 }
+async function addQuestionReport(req, res) {
+  try {
+    const question = await Question.findById(req.params.id);
+
+    if (!question) {
+      return res.status(404).json({ error: "Question not found" });
+    }
+    if (!req.body.reason) {
+      return res.status(400).json({ error: "Reason is required" });
+    }
+    const report = await Report.create({
+      ...req.body,
+      reportedBy: req.user._id,
+    });
+    question.reports.push(report._id);
+    await question.save();
+
+    res.json(report);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "Failed to fetch question details" });
+  }
+}
 
 module.exports = {
   getQuestions,
@@ -156,4 +180,5 @@ module.exports = {
   deleteQuestion,
   updateQuestion,
   getQuestionDetails,
+  addQuestionReport,
 };
