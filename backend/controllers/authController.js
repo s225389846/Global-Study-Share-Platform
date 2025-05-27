@@ -1,10 +1,12 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
+const { sendRegistrationEmail } = require("../utils/mailer");
 
 exports.handleRegister = async (req, res) => {
   const { name, email, password } = req.body || {};
   const errors = {};
 
+  // Validation
   if (!name || name.trim().length === 0) {
     errors.name = "Name is required";
   }
@@ -26,13 +28,23 @@ exports.handleRegister = async (req, res) => {
     return res.status(400).json({ errors });
   }
 
-  const user = new User(req.body);
+  // Create user
+  const user = new User({ name, email, password });
   await user.save();
+
+  // Send registration email
+  try {
+    await sendRegistrationEmail(user.email, user.name);
+  } catch (err) {
+    console.error("Email send failed:", err.message);
+  }
+
+  // Respond
   res.json({ data: user.toJSON(), message: "User registered successfully!" });
 };
 
 exports.handleLogin = async (req, res) => {
-  const { password, email } = req.body;
+  const { email, password } = req.body;
 
   const user = await User.findOne({ email });
   if (!user || !(await user.comparePassword(password))) {
@@ -42,6 +54,7 @@ exports.handleLogin = async (req, res) => {
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
     expiresIn: "30d",
   });
+
   res.json({
     token,
     role: user.role,
@@ -49,4 +62,7 @@ exports.handleLogin = async (req, res) => {
   });
 };
 
-exports.handleLogout = async (req, res) => {};
+exports.handleLogout = async (req, res) => {
+  // No-op for token-based auth unless you're using token blacklisting
+  res.json({ message: "Logged out successfully" });
+};
