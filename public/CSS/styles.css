@@ -336,11 +336,11 @@ body {
   font-size: 12px;
 }
 
-.feed-bottom .modal-footer {
+.chat-input .modal-footer {
   display: block;
 }
 
-.feed-bottom .modal-title {
+.chat-input .modal-title {
   color: var(--primary-color);
 }
 
