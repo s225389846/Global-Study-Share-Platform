@@ -8,7 +8,8 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.1",
-    "node": "^24.1.0"
+    "node": "^24.1.0",
+    "nodemailer": "^7.0.3"
   },
   "name": "global-study-share-platform",
   "version": "1.0.0",
