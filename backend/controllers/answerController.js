@@ -1,6 +1,7 @@
 const Answer = require("../models/Answer");
 const Question = require("../models/question");
 const { slugify } = require("../utils/slug");
+const { sendAnswerNotificationEmail } = require("../utils/mailer"); 
 
 async function createAnswer(req, res) {
   try {
@@ -23,6 +24,26 @@ async function createAnswer(req, res) {
       ...req.body,
       author: req.user._id,
     });
+
+    try {
+      const questionData = await Question.findById(question).populate('author');
+      if (questionData && questionData.author && questionData.author.email) {
+        await sendAnswerNotificationEmail(
+          questionData.author.email,
+          questionData.author.name,
+          questionData.title,
+          answer.body,
+          questionData._id // Pass the question ID for the link
+        );
+        console.log(`Notification email sent to ${questionData.author.email} for question "${questionData.title}"`);
+      } else {
+        console.warn('Could not send answer notification: Question author not found or has no email.');
+      }
+    } catch (emailError) {
+      console.error('Error sending answer notification email:', emailError);
+      // email sending is  secondary.
+    }
+    
 
     res.status(201).json({ message: "Answer created successfully", answer });
   } catch (error) {

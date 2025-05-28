@@ -67,7 +67,27 @@ To authenticate, use the Login API to obtain the Bearer Token and set it in the 
   Answers
   Ensure that you have the correct MongoDB Atlas access credentials to interact with the database, that has been shared with you.
 
-- The user management handles profile creation, updation, retrieval and deletion. We used password hashing in user registraion for security. Admins can create and view the users. Users can update or see their details. Only super admins can delete admins but user role can updae only their details. The routes are in server.js, the schema design in user.js, and userController.js has frontend integration and other features. The name, email and password are mandatory then passwords use bycript for hashing and API has proper error handling codes included in them.
+- The user management handles profile creation, updation, retrieval and deletion.
+  
+-   We used password hashing in user registraion for security. Admins can create and view the users.
+-
+-  Users can update or see their details. Only super admins can delete admins but user role can updae only their details.
+-
+-  The routes are in server.js, the schema design in user.js, and userController.js has frontend integration and other features.
+-
+-  The name, email and password are mandatory then passwords use bycript for hashing and API has proper error handling codes included in them.
+
+Nodemailer is an inbuilt package of NodeJS used for sending the notification mail to the user after registration.
+
+The Benefit of ensuring that email exists, the user can understand that he has registered.
+
+The notification will go as and when the user's question gets answerd by the same NodeMailer.
+
+It helps the user know wothout opening the app, improves user satisfaction and loyalty.
+
+The HndelReport loads the question reported by user and it is displayed to the admin
+
+They can verify them and restore or delete forever.
 
 Front-end Setup
 
