@@ -1,14 +1,13 @@
-require("dotenv").config(); 
+require("dotenv").config();
 const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.EMAIL_USER,       // Add Gmail address
-    pass: process.env.EMAIL_PASSWORD,   // Add Gmail App Password
+    user: process.env.EMAIL_USER, // Add Gmail address
+    pass: process.env.EMAIL_PASSWORD, // Add Gmail App Password
   },
 });
-
 
 async function sendRegistrationEmail(to, name) {
   const mailOptions = {

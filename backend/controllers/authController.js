@@ -63,6 +63,5 @@ exports.handleLogin = async (req, res) => {
 };
 
 exports.handleLogout = async (req, res) => {
-  // No-op for token-based auth unless you're using token blacklisting
   res.json({ message: "Logged out successfully" });
 };
