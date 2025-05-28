@@ -21,10 +21,8 @@ describe("Admin Sidebar Navigation", () => {
   });
 
   beforeEach(() => {
-    // Prevent app exceptions from failing Cypress tests
     Cypress.on("uncaught:exception", () => false);
 
-    // Set localStorage before visiting
     cy.visit("http://localhost:3000/templates/cms/admin-panel.html", {
       onBeforeLoad(win) {
         win.localStorage.setItem("token", token);
