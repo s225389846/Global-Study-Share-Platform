@@ -92,28 +92,53 @@ Front-end Setup
   No frame work used
 
 - Folder Structure
+  
   main folder/
+
   ├── backend/
+
   │ ├── controllers/
+
   │ ├── middlewares/
+
   │ ├── models/
+
   │ ├── seeders/
+
   │ ├── utils/
+
   │ ├── .env
+
   │ └── server.js
+
   ├── node_modules/
+
   ├── public/
+
   │ ├── CSS/
+
   │ ├── images/
+
   │ ├── JS/
+
   │ ├── templates/
+
+
   │ │ ├── cms/
+
   │ │ └── user/
+
   | ├── .prettierignore
+
+
   │ ├── index.html
+
   ├── .gitignore
+
   ├── package.json
+
   ├── package-lock.json
+
   ├── README.md
 
 - API Integration
