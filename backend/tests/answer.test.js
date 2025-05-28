@@ -106,46 +106,4 @@ describe("Answer Controller", () => {
       message: "answer deleted successfully",
     });
   });
-
-  // test("addAnswerReport - success", async () => {
-  //   const req = {
-  //     params: { id: "a1" },
-  //     body: { reason: "spam" },
-  //     user: mockUser,
-  //   };
-  //   const res = createMockRes();
-
-  //   Answer.findById.mockResolvedValue({
-  //     _id: "a1",
-  //     reports: [],
-  //     save: jest.fn(),
-  //   });
-  //   Report.create.mockResolvedValue({ _id: "r1", reason: "spam" });
-
-  //   await addAnswerReport(req, res);
-
-  //   expect(res.json).toHaveBeenCalledWith(
-  //     expect.objectContaining({ reason: "spam" })
-  //   );
-  // });
-
-  // test("addAnswerReport - missing reason", async () => {
-  //   const req = {
-  //     params: { id: "a1" },
-  //     body: {},
-  //     user: mockUser,
-  //   };
-  //   const res = createMockRes();
-
-  //   Answer.findById.mockResolvedValue({
-  //     _id: "a1",
-  //     reports: [],
-  //     save: jest.fn(),
-  //   });
-
-  //   await addAnswerReport(req, res);
-
-  //   expect(res.status).toHaveBeenCalledWith(400);
-  //   expect(res.json).toHaveBeenCalledWith({ error: "Reason is required" });
-  // });
 });
