@@ -3,20 +3,20 @@
 - Project Name: Global Studey Share Platform
 
 - Team Members and Roles:
-Prajina Acharya: Front-End Developer
-Trilochan Adhikari: Core Developer & Scrum Master Sprint 1
-Uttam Nepal: Backend Dveloper & Scrum Master Sprint 2
-Levin Joseph Poovakulath: CRUD Developer 
-Sonakshi: Front-End Developer
+  Prajina Acharya: Front-End Developer
+  Trilochan Adhikari: Core Developer & Scrum Master Sprint 1
+  Uttam Nepal: Backend Dveloper & Scrum Master Sprint 2
+  Levin Joseph Poovakulath: CRUD Developer
+  Sonakshi: Front-End Developer
 
 - Basis Setup Instruction:
+
 1. Clone the GIT Repository
 2. In the terminal write: npm install
 3. After NPM is installed, write npm install node
 4. After node is installed, write cd backend
-5. The app is ready to run, write node server.js 
+5. The app is ready to run, write node server.js
 6. After it runs the server, in browser type: http://localhost:3000/
-
 
 API Integration Guide
 
@@ -67,7 +67,7 @@ To authenticate, use the Login API to obtain the Bearer Token and set it in the 
   Answers
   Ensure that you have the correct MongoDB Atlas access credentials to interact with the database, that has been shared with you.
 
-The user management handles profile creation, updation, retrieval and deletion. We used password hashing in user registraion for security. Admins can create and view the users. Users can update or see their details. Only super admins can delete admins but user role can updae only their details. The routes are in server.js, the schema design in user.js, and userController.js has frontend integration and other features. The name, email and password are mandatory then passwords use bycript for hashing and API has proper error handling codes included in them.
+- The user management handles profile creation, updation, retrieval and deletion. We used password hashing in user registraion for security. Admins can create and view the users. Users can update or see their details. Only super admins can delete admins but user role can updae only their details. The routes are in server.js, the schema design in user.js, and userController.js has frontend integration and other features. The name, email and password are mandatory then passwords use bycript for hashing and API has proper error handling codes included in them.
 
 Front-end Setup
 

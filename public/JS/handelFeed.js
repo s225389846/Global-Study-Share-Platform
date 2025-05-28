@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", async () => {
               <div class="modal-body comments-body" id="comments-${questionId}">
                 <p>Loading comments...</p>
               </div>
-              <div class="modal-footer">
-                <form class="chat-input-area d-flex" data-id="${questionId}">
+              <div class="modal-footer chat-input-area">
+                <form class="comment-form d-flex" data-id="${questionId}">
                   <input type="text" class="form-control" placeholder="Type your comment..." required />
-                  <button type="submit">Send</button>
+                  <button type="submit" class="">Send</button>
                 </form>
               </div>
             </div>
