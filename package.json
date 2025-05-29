@@ -9,7 +9,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.1",
     "node": "^24.1.0",
-    "nodemailer": "^7.0.3"
+    "nodemailer": "^7.0.3",
+    "socket.io": "^4.8.1"
   },
   "name": "global-study-share-platform",
   "version": "1.0.0",
