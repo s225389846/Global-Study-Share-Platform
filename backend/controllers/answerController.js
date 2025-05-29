@@ -62,7 +62,7 @@ async function createAnswer(req, res) {
             answerAuthorName: req.user.name || 'Someone',
             questionAuthorId: questionAuthorId
         });
-        console.log(`The real-time notification emitted for question author ID: ${questionAuthorId}`);
+        console.log();
     }
 
 

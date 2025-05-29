@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Disconnected from WebSocket server.");
   });
 
-  // Listen for the 'newAnswerNotification' event from the server
+  // Listening for the 'newAnswerNotification' event from the server
   socket.on("newAnswerNotification", (data) => {
     console.log("Received new answer notification:", data);
 
-    // Check if this notification is for the currently logged-in user
+    // Checking if this notification is for the currently logged-in user
     if (currentUser._id === data.questionAuthorId) {
       const notificationMessage = `Your question "${data.questionTitle}" has a new answer from ${data.answerAuthorName}!`;
-      alert(notificationMessage); // Simple alert for demonstration
+      alert(notificationMessage); 
 
       
        showToast(notificationMessage, data.questionId);
