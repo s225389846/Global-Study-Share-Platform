@@ -1,0 +1,92 @@
+commit cd0b955826543ab1e78bd3889fecad6332e65e0c
+Merge: 6b9fa4f 10cf405
+Author: s224877838 <s224877838@deakin.edu.au>
+Date:   Thu May 29 18:54:30 2025 +0530
+
+    Merge branch 'main' of github.com:s225389846/Global-Study-Share-Platform
+
+commit aa4436ec80359a659c7908b3ff70e5a95c9db806
+Merge: 64bf44b 53b9a41
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Thu May 29 11:33:04 2025 +1000
+
+    mmerged
+
+commit 4e2509ff79c20bdbb1d48f34a6ffc4c3714e56ed
+Merge: 8fd64ae 1938d61
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Wed May 28 22:13:07 2025 +1000
+
+    merged
+
+commit 8fd64ae660f0acd1c337c9828e2ee9ddaa199aa5
+Merge: ce2e069 0e9ac2c
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Wed May 28 22:04:20 2025 +1000
+
+    Merge branch 'Report_handling'
+
+commit 2b471d95da64599f910d900ea981dd894be0c64a
+Merge: ec450a8 4ac9a47
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Wed May 28 18:31:21 2025 +1000
+
+    Merge branch 'handel-report-integration'
+
+commit 57ed3bf64b1d427b32f845edfc7bb53baae440ad
+Merge: 5bba145 86d0a61
+Author: s224877838 <s224877838@deakin.edu.au>
+Date:   Tue May 27 23:43:32 2025 +1000
+
+    Merge pull request #2 from s225389846/instant_mail
+    
+    'Instant_mail_to_newly_registerd_users'
+
+commit b9c9ce0c06e1280eb976f45b80dee696e1dec6ee
+Merge: cf614aa 79916df
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Fri May 23 19:39:54 2025 +1000
+
+    merged
+
+commit c545e35fdfa1f2118ff726c28226e98ac86c4f42
+Merge: 3ee0d4b a5c830c
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Mon May 19 17:31:57 2025 +1000
+
+    merged files
+
+commit 0d4915342600ff6634b7d15b32205e91e5811a3d
+Merge: 495c973 e097cb6
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Wed May 14 18:51:36 2025 +1000
+
+    Merge branch 'login-inter'
+
+commit 495c973a7b82775dbdb2b1d23d772df0c21f006f
+Merge: 4bd783b edccc45
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Wed May 14 17:57:34 2025 +1000
+
+    Merge branch 'uttam-controllers'
+
+commit dc2141cd8e6541f48d2f7bebdc50bd21400ddb48
+Merge: e6746d4 2b0d42c
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Mon May 12 18:09:21 2025 +1000
+
+    Merge branch 'uttam-register'
+
+commit a9302c2e03e3861d5b76bc414b4952ced49b9ada
+Merge: ed866ee 288dd52
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Mon May 12 14:26:49 2025 +1000
+
+    Merge branch 'uttam-models'
+
+commit ed866ee06f634965b36ed14f9f33c651478589ce
+Merge: 97cfd79 7be6018
+Author: Trilochan Adhikari <s225389846@deakin.edu.au>
+Date:   Mon May 12 14:22:44 2025 +1000
+
+    Merge branch 'uttam-backend'
